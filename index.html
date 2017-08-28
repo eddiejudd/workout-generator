@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="A dynamic, no equipment required, workout generator." />
+
+    <title>Workout Generator by Eddie Judd</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Teko:400,700" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="images/icon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/icon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/icon-96.png" sizes="96x96">
+    
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone-retina.png"/>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <img id="title" src="images/Logo.svg" alt="Workout Generator" />
+
+        <div id="instructions">
+
+            <p>Hit 'Workout!' to start your workout. Perform the exercise until the top timer ends.
+            </p>
+
+            <label>How much time do you want to spend doing each exercise (seconds)? </label><input id="exerciseLength" value="30">
+            
+            </br>
+            </br>
+            
+            <label>How many sets do you want to do? </label><input id="workoutSets" value="10">
+
+        </div>
+
+        <button id="timerStart" class="start">Workout!</button>
+
+        <div id="workout">
+            <h3 id="currentExercise">Hit Workout!</h3>
+        </div>
+
+        <div id="exerciseProgressContainer">
+            <div id="exerciseProgressBar"></div>
+        </div>
+        
+        <div id="workoutProgressContainer">
+            <div id="workoutProgressBar"></div>
+        </div>
+
+    </div>
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+    
+</html>

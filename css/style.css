@@ -1,0 +1,238 @@
+/* reset */
+
+/*reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* box sizing */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* CSS */
+
+* {
+    -webkit-font-smoothing: antialiased !important;
+}
+
+html{
+    background-image: linear-gradient(rgba(4, 20, 42, 0.975), rgba(5, 25, 52, 0.925), rgba(6, 30, 62, 0.725)), url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 7% 60%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#title{
+    height: 200px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+#instructions {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 12.5vh;
+}
+
+@media(max-width: 800px) {
+    #instructions {
+        padding-bottom: 10vh;
+    }
+    #title {
+        height: 200px;
+    }
+}
+
+@media(max-width: 414px) {
+    #instructions {
+        padding-bottom: 7.5vh;
+    }
+    
+    #title {
+        height: 170px;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}
+
+@media(max-width: 375px) {
+    #instructions {
+        padding-bottom: 5vh;
+    }
+    
+    #title {
+        height: 135px;
+        margin-top: 1.5vh;
+        margin-bottom: 2vh;
+    }
+}
+
+@media(max-width: 320px) {
+    #instructions {
+        padding-bottom: 5vh;
+    }
+    
+    #instructions p, #instructions label {
+        font-size: 0.9em;
+    }
+    
+    #instructions input {
+        height: 35px;
+        width: 35px;
+        font-size: 1em;
+    }
+    
+    #title {
+        height: 100px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}
+
+#instructions p {
+    margin-bottom: 1.5em;
+}
+
+input {
+    width: 50px;
+    height: 40px;
+    
+    border-radius: 4px;
+    border-color: white;
+    border: 2px solid;
+    
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+button {
+    height: 50px;
+    width: 130px;
+    
+    margin-bottom: 5vh;
+
+    border-color: #FF6505;
+    border-width: 2px;
+    border-radius: 8px;
+    outline: none;
+
+    background-color: rgba(0, 0, 0 , 0);
+
+    color: #FF6505;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#currentExercise {
+    color: #FFA105;
+    margin-bottom: 30px;
+}
+
+#exerciseProgressContainer{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+}
+
+#exerciseProgressBar {
+    height: 10px;
+    width: 0%;
+    background-color: #FFA105;
+}
+
+#workoutProgressContainer{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+#workoutProgressBar {
+    height: 10px;
+    width: 0%;
+    background-color: #FF6505;
+}
+
+/* Typography */
+
+h1, h3 {
+    font-family: 'TEKO', sans-serif;
+}
+
+p, label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.025em;
+    color: white;
+    line-height: 1.4em;
+}
+
+#title {    
+    color: white;
+    font-weight: bold;
+    font-size: 3.5em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+#workout {
+    font-size: 2em;
+}
